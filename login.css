@@ -1,4 +1,18 @@
+@font-face {
+  font-family: "jua";
+  src: url("../font/BMJUA_ttf.ttf") format("truetype");
+}
+
 body {
-  background-color: gray;
-  color: #a841db;
+  font-family: "jua";
+  background-color: #282828;
+  color: white;
+}
+
+table {
+  border: 1px solid #fff;
+}
+
+td {
+  border: 1px solid #fff;
 }
