@@ -15,27 +15,58 @@ body {
 }
 
 table {
-  border: 1px solid #fff;
+  border-collapse: separate; /* 테두리 겹침 방지 */
+  border-spacing: 0; /* 테두리 간격 설정 */
+  border: 1px solid #fff; /* 테두리 색상 */
+  border-radius: 10px; /* 테두리 둥글게 처리 */
+  background-color: rgba(255, 255, 255, 0.2); /* 배경색을 불투명하게 설정 */
 }
 
-.inputPw-container {
-  position: relative;
-  width: 170px; /* 적절한 너비 설정 */
+td {
+  padding: 15px; /* 테두리와 내용물 사이의 여유 공간 */
+}
+
+tr:nth-child(1) td {
+  padding-bottom: 3px; /* 1행과 2행 사이의 간격 */
+}
+
+tr:nth-child(2) td {
+  padding-bottom: 15px; /* 2행과 3행 사이의 간격 */
+}
+
+tr:nth-child(3) td {
+  padding-bottom: 1px; /* 3행과 4행 사이의 간격 */
+}
+
+input:focus {
+  outline: none;
 }
 
 .inputId-container input::placeholder {
   font-family: 'jua';
   color: #aaa;
-  font-size: 10px;
+  font-size: 11px;
 }
 
-.inputPw-container input::placeholder {
+.inputId-container input[type='text'] {
   font-family: 'jua';
-  color: #aaa;
-  font-size: 10px;
+  color: #000000;
+  font-size: 11px;
+  width: 100%;
+  padding-right: 40px; /* 버튼의 너비와 간격을 고려하여 패딩 추가 */
+  box-sizing: border-box; /* 패딩을 너비에 포함시켜 레이아웃이 깨지지 않도록 */
+}
+
+.inputPw-container {
+  position: relative;
+  width: 200px; /* 적절한 너비 설정 */
 }
 
 .inputPw-container input[type='password'] {
+  font-family: 'jua';
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-size: 12px;
   width: 100%;
   padding-right: 40px; /* 버튼의 너비와 간격을 고려하여 패딩 추가 */
   box-sizing: border-box; /* 패딩을 너비에 포함시켜 레이아웃이 깨지지 않도록 */
@@ -43,7 +74,7 @@ table {
 
 .inputPw-container button {
   position: absolute;
-  right: 0px; /* 버튼과 입력 필드의 간격 조절 */
+  right: -2px; /* 버튼과 입력 필드의 간격 조절 */
   top: 63%;
   transform: translateY(-50%);
   background: none;
@@ -54,4 +85,26 @@ table {
 .inputPw-container img {
   width: 20px; /* 아이콘의 너비 설정 */
   height: 20px; /* 아이콘의 높이 설정 */
+}
+
+.three-col {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.three-col a {
+  color: white;
+}
+
+.login-container {
+  border-collapse: separate; /* 테두리 겹침 방지 */
+  border-spacing: 0; /* 테두리 간격 설정 */
+  border: 1px solid #fff; /* 테두리 색상 */
+  border-radius: 4px; /* 테두리 둥글게 처리 */
+  background-color: rgba(255, 255, 255, 0.2); /* 배경색을 불투명하게 설정 */
+  width: 100%; /* 표의 너비를 부모 컨테이너에 맞게 조정 */
+  box-sizing: border-box; /* 패딩과 테두리 포함 너비 조정 */
+  text-align: center;
+  cursor: pointer;
 }

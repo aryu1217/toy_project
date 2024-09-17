@@ -15,4 +15,3 @@ if (!startDate) {
 const dayPassed = calStartDay(startDate);
 
 alert('토이 프로젝트 ' + (dayPassed + 1) + '일차');
-console.log('test');
