@@ -1,18 +1,57 @@
 @font-face {
-  font-family: "jua";
-  src: url("../font/BMJUA_ttf.ttf") format("truetype");
+  font-family: 'jua';
+  src: url('../font/BMJUA_ttf.ttf') format('truetype');
 }
 
 body {
-  font-family: "jua";
-  background-color: #282828;
+  font-family: 'jua';
+  background-color: #000000;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 table {
   border: 1px solid #fff;
 }
 
-td {
-  border: 1px solid #fff;
+.inputPw-container {
+  position: relative;
+  width: 170px; /* 적절한 너비 설정 */
+}
+
+.inputId-container input::placeholder {
+  font-family: 'jua';
+  color: #aaa;
+  font-size: 10px;
+}
+
+.inputPw-container input::placeholder {
+  font-family: 'jua';
+  color: #aaa;
+  font-size: 10px;
+}
+
+.inputPw-container input[type='password'] {
+  width: 100%;
+  padding-right: 40px; /* 버튼의 너비와 간격을 고려하여 패딩 추가 */
+  box-sizing: border-box; /* 패딩을 너비에 포함시켜 레이아웃이 깨지지 않도록 */
+}
+
+.inputPw-container button {
+  position: absolute;
+  right: 0px; /* 버튼과 입력 필드의 간격 조절 */
+  top: 63%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.inputPw-container img {
+  width: 20px; /* 아이콘의 너비 설정 */
+  height: 20px; /* 아이콘의 높이 설정 */
 }

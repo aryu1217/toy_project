@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMC</title>
     <link rel="stylesheet" href="login.css" />
+    <script src="js-login.js" defer></script>
   </head>
   <body>
     <table>
       <tr>
-        <td>Login</td>
+        <td style="text-align: center">Login</td>
       </tr>
       <tr>
-        <td>2행</td>
+        <td>
+          <div class="inputId-container">
+            <input type="text" autofocus id="id" placeholder="Id" />
+          </div>
+        </td>
       </tr>
       <tr>
-        <td>3행</td>
+        <td>
+          <div class="inputPw-container">
+            <input type="password" id="pw" placeholder="Password" />
+            <button type="button" id="eyesButton">
+              <img src="eyes_img/close-eye.png" alt="Show/Hide Password" />
+            </button>
+          </div>
+        </td>
       </tr>
       <tr>
         <td>4행</td>
