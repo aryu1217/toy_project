@@ -63,9 +63,7 @@ input:focus {
 }
 
 .inputPw-container input[type='password'] {
-  font-family: 'jua';
-  background-color: #ffffff !important;
-  color: #000000 !important;
+  color: black;
   font-size: 12px;
   width: 100%;
   padding-right: 40px; /* 버튼의 너비와 간격을 고려하여 패딩 추가 */
