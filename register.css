@@ -1,13 +1,26 @@
+@keyframes expandAndMove {
+  0% {
+    transform: translate(20%, 20%) scale(0.5); /* 화면 가운데에서 시작, 50% 크기 */
+    opacity: 0.5; /* 약간 투명하게 시작 */
+  }
+  100% {
+    transform: translate(0, 0) scale(1); /* 원래 위치와 크기로 */
+    opacity: 1; /* 완전히 불투명 */
+  }
+}
+
 /* 모달 기본 설정 */
 .modal {
   display: none; /* 기본적으로 숨김 */
   position: fixed;
   z-index: 1;
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* 불투명한 테두리 */
   border-radius: 10px;
   padding: 30px;
   margin-top: -16%;
+  animation: expandAndMove 0.5s ease; /* 애니메이션 적용 */
+  box-shadow: 0 8px 16px rgba(0, 20, 3, 1); /* 더 진하고 큰 그림자 */
 }
 
 .modal-content {
@@ -22,8 +35,6 @@
   font-weight: bold;
   cursor: pointer;
   z-index: 100; /* 닫기 버튼이 모달 위에 표시되도록 설정 */
-  margin-top: -14%;
-  margin-right: -7%;
 }
 
 .close:hover,
