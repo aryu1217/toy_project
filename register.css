@@ -1,8 +1,61 @@
-body {
+/* 모달 기본 설정 */
+.modal {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed;
+  z-index: 1;
   background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: -16%;
 }
 
-table {
-  justify-content: center;
-  border: white 1px;
+.modal-content {
+  color: white;
+}
+
+/* 닫기 버튼 */
+.close {
+  color: white; /* 닫기 버튼 글씨 색상 */
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100; /* 닫기 버튼이 모달 위에 표시되도록 설정 */
+  margin-top: -14%;
+  margin-right: -7%;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336; /* 마우스 오버 시 색상 변경 */
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 폼 스타일 */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 94%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  margin-top: 20px;
 }

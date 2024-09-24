@@ -6,6 +6,7 @@
     <title>MMC</title>
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="sign-with.css" />
+    <link rel="stylesheet" href="register.css" />
     <script src="js-login.js" defer></script>
   </head>
   <body>
@@ -87,5 +88,33 @@
         </td>
       </tr>
     </table>
+    <!-- 회원가입 모달 추가 -->
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">X</span>
+        <h2>회원가입</h2>
+        <form>
+          <label for="nickname">닉네임:</label>
+          <input type="text" id="nickname" name="nickname" required />
+
+          <label for="username">아이디:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">비밀번호:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="confirm-password">비밀번호 확인:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+
+          <button type="submit" class="submit-btn">가입하기</button>
+        </form>
+      </div>
+    </div>
+    <!-- 회원가입 모달 끝 -->
   </body>
 </html>
