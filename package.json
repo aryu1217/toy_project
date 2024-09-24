@@ -1,0 +1,19 @@
+{
+  "name": "toy_project",
+  "version": "1.0.0",
+  "main": "js-login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryu1217/toy_project.git"
+  },
+  "author": "RYU TAE HYUN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryu1217/toy_project/issues"
+  },
+  "homepage": "https://github.com/aryu1217/toy_project#readme",
+  "description": ""
+}
